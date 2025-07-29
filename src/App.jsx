@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import Ongoing from "./pages/Ongoing";
 import Completed from "./pages/Completed";
 import NavBar from "./components/NavBar";
 import CreateGoal from "./pages/CreateGoal";
 import AllGoals from "./pages/AllGoals";
 import Progress from "./pages/Progress";
+import CoverPage from "./pages/CoverPage";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<CoverPage />} />
           <Route path="/ongoing" element={<Ongoing />} />
           <Route path="/completed" element={<Completed />} />
           <Route path="/progress" element={<Progress />} />
