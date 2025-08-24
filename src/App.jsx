@@ -7,17 +7,19 @@ import CreateGoal from "./pages/CreateGoal";
 import AllGoals from "./pages/AllGoals";
 import Progress from "./pages/Progress";
 import CoverPage from "./pages/CoverPage";
+import {Toaster} from "react-hot-toast"
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <Toaster position="top-center"/>
         <NavBar />
         <Routes>
           <Route path="/" element={<CoverPage />} />
           <Route path="/ongoing" element={<Ongoing />} />
           <Route path="/completed" element={<Completed />} />
-          <Route path="/progress" element={<Progress />} />
+          <Route path="/progress/:id" element={<Progress />} />
           <Route path="/create" element={<CreateGoal />} />
           <Route path="/all" element={<AllGoals />} />
         </Routes>
@@ -27,3 +29,5 @@ function App() {
 }
 
 export default App;
+
+// https://goal-back-t29s.onrender.com
