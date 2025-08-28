@@ -131,7 +131,7 @@ const Ongoing = () => {
               </h4>
 
                 <div className="text-start  w-full ">
-                  <p className="font-normal break-words  text-base lg:text-[20px] leading-[100%] text-[#000000CC] m-0">
+                  <p className="font-normal break-words  text-base lg:text-[20px] leading-[24.38px] text-[#000000CC] m-0">
                     {description}
                   </p>
                 </div>

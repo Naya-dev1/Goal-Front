@@ -108,17 +108,11 @@ const Completed = () => {
               <div className="bg-[#FFFFFF] shadow-md pb-[52px] sm:px-6 px-4 lg:px-[35px] pt-[24px] flex flex-col gap-7.25">
                 <div className="flex items-start gap-2">
                   {progress === 100 && (
-                    <div>
-                      <h4 className="font-semibold text-base sm:text-[20px]  text-[#0585CD] pr- mb-1">
-                        Congratulations! You have completed this Goal
+                    <div className="">
+                      <h4 className="font-semibold text-[16px] sm:text-[20px]  text-[#0585CD] pr- mb-1">
+                        Congratulations! You have completed this Goal 🎉
                       </h4>
-                      <span>
-                        <img
-                          src={emoji}
-                          alt=""
-                          className="h-[29.42px] w-[29.9px]"
-                        />
-                      </span>
+                     
                     </div>
                   )}
                 </div>
@@ -127,7 +121,7 @@ const Completed = () => {
                     {title.toUpperCase()}
                   </p>
                   <div className="text-start w-full">
-                    <p className="font-normal  text-base sm:text-[20px] leading-[100%] text-[#000000CC] break-words ">
+                    <p className="font-normal  text-base sm:text-[20px] leading-[24.38px] text-[#000000CC] break-words ">
                       {description}
                     </p>
                   </div>
@@ -144,7 +138,7 @@ const Completed = () => {
                       </span>
                     </div>
                     <div
-                      className="w-[368px] bg-gray-200
+                      className="sm:w-[368px] w-[295px] bg-gray-200
                     rounded-full h-3"
                     >
                       <div
@@ -153,7 +147,7 @@ const Completed = () => {
                       ></div>
                     </div>
                   </div>
-                  <div className="flex gap-[55px] flex-col sm:flex-row ">
+                  <div className="flex gap-[30px] flex-col sm:flex-row mt-7 ">
                     <Link
                       to={`/progress/${_id}`}
                       className="flex items-center gap-2.5 justify-center h-[56px] bg-[#0585CD]
@@ -166,9 +160,7 @@ const Completed = () => {
                       Edit
                     </Link>
                     <button
-                      onClick={() => 
-                        handleDelete(_id)
-                      }
+                      onClick={() => handleDelete(_id)}
                       className="flex justify-center items-center h-[56px] w-[131.43px] rounded-[10px] font-semibold text-[20px] border border-[#0585CD] hover:bg-[#e6f4fb] transition bg-[#FFFFFF] text-[#0585CD]"
                     >
                       <span>
