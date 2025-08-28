@@ -90,14 +90,14 @@ const NavBar = () => {
             Ongoing
           </Link>
           <Link
-            to="/complete"
+            to="/completed"
             className="text-black text-base font-semibold font-montserrat hover:text-gray-700 transition"
             onClick={() => setMenuOpen(false)}
           >
             Completed
           </Link>
           <Link
-            to="/allgoals"
+            to="/all"
             className="text-black text-base font-semibold font-montserrat hover:text-gray-700 transition"
             onClick={() => setMenuOpen(false)}
           >

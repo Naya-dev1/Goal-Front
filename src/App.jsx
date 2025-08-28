@@ -7,13 +7,14 @@ import CreateGoal from "./pages/CreateGoal";
 import AllGoals from "./pages/AllGoals";
 import Progress from "./pages/Progress";
 import CoverPage from "./pages/CoverPage";
-import {Toaster} from "react-hot-toast"
+import { Toaster } from "react-hot-toast";
+import Error from "./pages/Error";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Toaster position="top-center"/>
+        <Toaster position="top-center" />
         <NavBar />
         <Routes>
           <Route path="/" element={<CoverPage />} />
@@ -22,6 +23,7 @@ function App() {
           <Route path="/progress/:id" element={<Progress />} />
           <Route path="/create" element={<CreateGoal />} />
           <Route path="/all" element={<AllGoals />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </>
