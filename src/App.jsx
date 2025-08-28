@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Ongoing from "./pages/Ongoing";
 import Completed from "./pages/Completed";
 import NavBar from "./components/NavBar";
@@ -23,7 +23,9 @@ function App() {
           <Route path="/progress/:id" element={<Progress />} />
           <Route path="/create" element={<CreateGoal />} />
           <Route path="/all" element={<AllGoals />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/404" element={<Error />} />
+          <Route path="*" element={<Navigate to="/404" />} />
+
         </Routes>
       </BrowserRouter>
     </>
