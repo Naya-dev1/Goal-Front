@@ -9,7 +9,7 @@ const CoverPage = () => {
       <img src={girl} alt="Illustration" />
 
       <div className="w-full lg:w-1/2 text-start flex flex-col gap-[25px] items-start">
-        <h1 className="font-montserrat font-semibold sm:text-[36px] text-[28px] lg:text-[36px] leading-snug text-black m-0">
+        <h1 className="font-montserrat font-semibold sm:text-[36px] text-[20px] lg:text-[36px] leading-snug text-black m-0">
           Improve Productivity By Managing{" "}
           <span className="text-[#0585cd]">Your Goals</span>
         </h1>
